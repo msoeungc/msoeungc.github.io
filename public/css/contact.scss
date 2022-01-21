@@ -1,0 +1,63 @@
+@import "_variables.scss";
+
+.contact h1 {
+  color: map-get($colors, secondary);
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-color: map-get($colors, tertiary);
+  padding: 4rem;
+
+  h2 {
+    font-size: 3rem;
+    color: map-get($colors, secondary);
+    padding-bottom: 2rem;
+  }
+
+}
+
+.mail {
+  font-size: 2rem;
+  text-align: center;
+  color: map-get($colors, secondary);
+  border-radius: 3%;
+  background-color: map-get($colors, tertiary);
+  padding: 1rem 3rem;
+  &:hover {
+    background-color: lighten(map-get($colors, tertiary), 20);
+  }
+}
+
+.media-container {
+  margin-top: 5rem;
+}
+
+.media-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.media-item {
+  color: map-get($colors, tertiary);
+  padding: 0 2rem;
+
+  a {
+    color: inherit;
+  }
+}

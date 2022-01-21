@@ -1,0 +1,37 @@
+@import "_variables.scss";
+
+.about {
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.about h1 {
+  color: map-get($colors, secondary);
+  font-size: 3.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.about-container {
+  margin: auto;
+  height: auto;
+  width: 70%;
+  color: map-get($colors, secondary);
+  font-size: 2rem;
+}
+
+.about-wrapper {
+  border-style: solid;
+  border-color: map-get($colors, tertiary);
+  border-right-width: thin;
+  border-top-width: thin;
+  border-bottom-width: thin;
+  border-left-width: thick;
+  margin-bottom: 3rem;
+  padding: 2rem;
+
+  p {
+    text-align: left;
+    padding-bottom: 1.5rem;
+  }
+}

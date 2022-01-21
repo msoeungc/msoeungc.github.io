@@ -1,0 +1,10 @@
+footer {
+  width: 100vw;
+  padding: 4rem 0 1rem;
+  text-align: center;
+
+  .footer {
+    color: map-get($colors, secondary);
+    font-size: 1.5rem;
+  }
+}

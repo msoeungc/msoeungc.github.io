@@ -1,0 +1,116 @@
+<%- include("partials/head"); -%>
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- Logo -->
+    <a class="navbar-brand" href="/"><img src="/images/Logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <section class="title" id="title">
+    <div class="main-bg"></div>
+    <div class="title-container">
+      <div class="title-text-container slide-wrap">
+        <h1>Hello, I'm <span style="color: rgb(187, 225, 250)">Matthew Soeung</span></h1>
+        <h2>I am a frontend web developer based in Orange, California.</h2>
+      </div>
+      <div class="title-img-container slide-wrap">
+        <img class="title-img" src="/images/selfYosemite.jpg" />
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h1 class="slide-wrap">About Me</h1>
+    <div class="about-container">
+      <div class="slide-wrap">
+        <div class="about-wrapper">
+          <p>
+            Hi, I'm Matthew Soeung - I am a frontend web developer based in Orange, California.
+            I orginially completed my undergraduate program in Business Administraton at CSUF and worked in
+            a mortgage company for a bit. I started getting into programming because multiple family
+            members got into the industry and I found it interesting when I saw them coding. This prompted me to complete a graduate
+            program in Computer Science at National University.
+          </p>
+        </div>
+      </div>
+      <div class="slide-wrap">
+        <div class="about-wrapper">
+          <p>
+            My path to becoming a web developer was a bit unconventional. I learned the conceptual side of being a developer before
+            knowing any programming languages. I had a difficult time figuring out what I wanted to focus on in the world of software development.
+            During my graduate program I experienced a bit of web development and decided to take that route. I learned the core of web development
+            through courses found on <a href="https://udemy.com" target="_blank">Udemy</a>. I now have knowledge on HTML, CSS/SASS, JS, React, and Node/NPM. My current goal is to establish myself
+            as a strong frontend developer before diving into full stack development.
+          </p>
+        </div>
+      </div>
+      <div class="slide-wrap">
+        <div class="about-wrapper">
+          <p>
+            When I'm not coding, I can be found hiking on a beautiful Southern California trail, cooking up delicious food in the kitchen, or on my computer
+            watching a show with my girlfriend, or playing Rocket league or Apex Legends.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="project" id="projects">
+    <div class="slide-wrap">
+      <h1>Projects</h1>
+    </div>
+    <div class="project-container">
+      <div class="slide-wrap">
+        <div class="project-img-container">
+          <img class="project-img" src="/images/baileyScout.jpg" alt="Bailey&Scout">
+          <div class="img-overlay">
+            <div class="img-title">
+              A website showcasing my pets
+            </div>
+            <p class="img-description">
+              Tools used: HTML, CSS/SASS, JS, EJS, Node, Express, Mongodb, and Bootstrap
+            </p>
+            <a href="https://secure-headland-12298.herokuapp.com/" target="_blank"><button type="submit" name="p1button">View project</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="slide-wrap">
+      <h1>Contact Me</h1>
+    </div>
+    <div class="contact-container">
+      <div class="slide-wrap">
+        <div class="contact-card">
+          <h2>Would you like to send me a message?</h2>
+          <a href="mailto:m_soeung_c@yahoo.com" class="mail">Say Hi 👋</a>
+        </div>
+      </div>
+      <div class="slide-wrap">
+        <div class="media-container">
+          <ul class="media-list">
+            <li class="media-item"><a href="/extra/Resume.pdf" target="_blank"><i class="fas fa-file-alt fa-3x"></i></a></li>
+            <li class="media-item"><a href="https://github.com/msoeungc" target="_blank"><i class="fab fa-github fa-3x"></i></a></li>
+            <li class="media-item"><a href="https://www.linkedin.com/in/matthew-soeung/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<footer>
+    <h2 class="footer">Designed and Developed by Matthew Soeung</h2>
+</footer>
+<script src="js/animations.js"></script>
