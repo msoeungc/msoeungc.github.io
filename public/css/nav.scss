@@ -8,6 +8,10 @@
   background-color: map-get($colors, tertiary);
 }
 
+.navbar-brand {
+  margin-left: 16%;
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: row;
@@ -15,8 +19,8 @@
   align-items: center;
   width: 100%;
   text-decoration: none;
+  margin-left: 30%;
 }
-
 
 .nav-item {
   padding: 0 1rem;
@@ -24,9 +28,39 @@
 
 .nav-link {
   color: map-get($colors, secondary);
+  width: 100%;
+  text-align: right;
   font-size: 2rem;
 
   &:hover {
     cursor: pointer;
   }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 374.98px) and (max-width: 767.98px) and (orientation: portrait) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-nav {
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 1rem;
+  }
+  .nav-link {
+    font-size: 12px;
+    padding: 0.25rem 0;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

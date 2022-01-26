@@ -1,6 +1,7 @@
 @import "_variables.scss";
 
 .title-container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,6 +12,7 @@
   width: 30%;
   text-align: left;
   margin-right: 10%;
+
   h1 {
     font-size: 6rem;
     color: map-get($colors, secondary);
@@ -32,3 +34,87 @@
   border-radius: 50%;
   border: 10px dashed map-get($colors, tertiary);
 }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 374.98px) and (max-width: 767.98px) and (orientation: portrait) {
+  .title {
+    height: 100vh;
+  }
+
+  .title-container {
+    flex-direction: column;
+    padding: 2% 0;
+  }
+
+  .title-text-container {
+    width: 100vw;
+    text-align: center;
+    margin-right: 0;
+    padding: 2rem 1.5rem;
+
+    h1 {
+      font-size: 2rem;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      padding: 0;
+    }
+  }
+
+  .title-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: 0;
+
+    .title-img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  .title-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    height: 100vh;
+
+    .title-text-container {
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+      padding: 25% 0 0;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        padding: 0;
+      }
+    }
+
+    .title-img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-left: 0;
+
+      .title-img {
+        height: 275px;
+        width: 275px;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

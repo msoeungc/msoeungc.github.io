@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   padding: 5% 0;
 }
 
@@ -19,6 +19,7 @@
   position: relative;
   width: 700px;
 }
+
 
 .project-img {
   display: block;
@@ -68,3 +69,43 @@
   font-size: 1.5rem;
   margin-top: 1rem;
 }
+
+.project-btn {
+  background-color: map-get($colors, tertiary);
+  color: map-get($colors, secondary);
+  border-radius: 0.5rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 374.98px) and (max-width: 767.98px) and (orientation: portrait) {
+
+  .project h1 {
+    font-size: 2rem;
+  }
+
+  .project-container {
+    padding-bottom: 5rem;
+  }
+
+  .project-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
+  .img-title {
+    font-size: 1.5rem;
+  }
+
+  .img-description {
+    font-size: 1rem;
+  }
+
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
