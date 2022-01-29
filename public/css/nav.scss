@@ -6,10 +6,16 @@
 
 .navbar {
   background-color: map-get($colors, tertiary);
+  padding: 0 2rem;
 }
 
 .navbar-brand {
-  margin-left: 16%;
+  margin: 0;
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .navbar-nav {
@@ -19,18 +25,18 @@
   align-items: center;
   width: 100%;
   text-decoration: none;
-  margin-left: 30%;
+  margin-right: 5rem;
 }
 
 .nav-item {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 .nav-link {
   color: map-get($colors, secondary);
   width: 100%;
   text-align: right;
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   &:hover {
     cursor: pointer;
@@ -46,6 +52,11 @@
   .navbar-brand {
     padding: 0;
     margin: 0;
+
+    .logo {
+      width: 64px;
+      height: 64px;
+    }
   }
 
   .navbar-nav {
@@ -59,8 +70,39 @@
   }
 }
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {}
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  .navbar-nav {
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 1rem;
+  }
+}
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px)  and (max-width: 1199.98px) and (orientation: landscape) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+
+    .logo {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  .navbar-nav {
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}

@@ -98,8 +98,66 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {}
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  .contact h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-container {
+    margin: 0;
+  }
+
+  .contact-card {
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+
+   h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
+  .mail {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .media-item {
+    font-size: 2.5rem;
+  }
+}
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) and (orientation: landscape) {
+  .contact h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-container {
+    margin: 0;
+  }
+
+  .contact-card {
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+
+   h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
+  .mail {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .media-item {
+    font-size: 2.5rem;
+  }
+}
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}

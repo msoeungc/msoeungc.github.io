@@ -2,10 +2,14 @@
   color: #DDDDDD; }
 
 .navbar {
-  background-color: #30475E; }
+  background-color: #30475E;
+  padding: 0 2rem; }
 
 .navbar-brand {
-  margin-left: 16%; }
+  margin: 0; }
+  .navbar-brand .logo {
+    width: 80px;
+    height: 80px; }
 
 .navbar-nav {
   display: flex;
@@ -14,16 +18,16 @@
   align-items: center;
   width: 100%;
   text-decoration: none;
-  margin-left: 30%; }
+  margin-right: 5rem; }
 
 .nav-item {
-  padding: 0 1rem; }
+  padding: 0 1.5rem; }
 
 .nav-link {
   color: #DDDDDD;
   width: 100%;
   text-align: right;
-  font-size: 2rem; }
+  font-size: 1.5rem; }
   .nav-link:hover {
     cursor: pointer; }
 
@@ -34,6 +38,9 @@
   .navbar-brand {
     padding: 0;
     margin: 0; }
+    .navbar-brand .logo {
+      width: 64px;
+      height: 64px; }
 
   .navbar-nav {
     flex-direction: column;
@@ -43,6 +50,30 @@
   .nav-link {
     font-size: 12px;
     padding: 0.25rem 0; } }
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 1rem; } }
+@media (min-width: 992px) and (max-width: 1199.98px) and (orientation: landscape) {
+  .navbar {
+    padding: 0 1rem; }
+
+  .navbar-brand {
+    padding: 0;
+    margin: 0; }
+    .navbar-brand .logo {
+      width: 64px;
+      height: 64px; }
+
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0; }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 0; } }
 .title-container {
   width: 100%;
   display: flex;
@@ -109,7 +140,7 @@
       width: 100%;
       text-align: center;
       margin-right: 0;
-      padding: 25% 0 0; }
+      padding: 25% 0 5%; }
       .title-container .title-text-container h1 {
         font-size: 3rem; }
       .title-container .title-text-container h2 {
@@ -122,8 +153,37 @@
       width: 100%;
       margin-left: 0; }
       .title-container .title-img-container .title-img {
-        height: 275px;
-        width: 275px; } }
+        height: 300px;
+        width: 300px; } }
+@media (min-width: 992px) and (max-width: 1199.98px) and (orientation: landscape) {
+  .title-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; }
+
+  .title-text-container {
+    width: 50%;
+    text-align: center;
+    padding: 0 0 0 5rem; }
+    .title-text-container h1 {
+      font-size: 3.5rem;
+      color: #DDDDDD; }
+    .title-text-container h2 {
+      font-size: 1.5rem;
+      color: #DDDDDD;
+      padding: 0; }
+
+  .title-img-container {
+    width: 50%;
+    padding: 0 5rem 0 0; }
+
+  .title-img {
+    height: 350px;
+    border-radius: 50%;
+    border: 10px dashed #30475E; } }
 .about {
   width: 100%;
   padding-top: 5rem; }
@@ -164,7 +224,27 @@
       font-size: 1rem;
       padding-bottom: 0;
       margin-bottom: 0; } }
-.project h1 {
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  .about h1 {
+    font-size: 2.5rem; }
+
+  .about-wrapper {
+    width: 90%; }
+    .about-wrapper p {
+      font-size: 1.5rem;
+      padding-bottom: 0;
+      margin-bottom: 0; } }
+@media (min-width: 992px) and (max-width: 1199.98px) and (orientation: landscape) {
+  .about h1 {
+    font-size: 2.5rem; }
+
+  .about-wrapper {
+    width: 90%; }
+    .about-wrapper p {
+      font-size: 1.5rem;
+      padding-bottom: 0;
+      margin-bottom: 0; } }
+.projects h1 {
   font-size: 3.5rem;
   text-align: center;
   color: #DDDDDD; }
@@ -227,7 +307,7 @@
   border-radius: 0.5rem; }
 
 @media (min-width: 374.98px) and (max-width: 767.98px) and (orientation: portrait) {
-  .project h1 {
+  .projects h1 {
     font-size: 2rem; }
 
   .project-container {
@@ -238,6 +318,42 @@
     justify-content: center;
     align-items: center;
     width: 300px; }
+
+  .img-title {
+    font-size: 1.5rem; }
+
+  .img-description {
+    font-size: 1rem; } }
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  .projects h1 {
+    font-size: 2.5rem; }
+
+  .project-container {
+    padding-bottom: 5rem; }
+
+  .project-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px; }
+
+  .img-title {
+    font-size: 1.5rem; }
+
+  .img-description {
+    font-size: 1rem; } }
+@media (min-width: 992px) and (max-width: 1199.98px) and (orientation: landscape) {
+  .projects h1 {
+    font-size: 2.5rem; }
+
+  .project-container {
+    padding-bottom: 5rem; }
+
+  .project-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px; }
 
   .img-title {
     font-size: 1.5rem; }
@@ -318,6 +434,50 @@
 
   .media-item {
     font-size: 2rem; } }
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  .contact h1 {
+    font-size: 2.5rem; }
+
+  .contact-container {
+    margin: 0; }
+
+  .contact-card {
+    width: 90%;
+    padding: 1rem;
+    margin: auto; }
+    .contact-card h2 {
+      font-size: 1.75rem;
+      text-align: center; }
+
+  .mail {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 1rem; }
+
+  .media-item {
+    font-size: 2.5rem; } }
+@media (min-width: 992px) and (max-width: 1199.98px) and (orientation: landscape) {
+  .contact h1 {
+    font-size: 2.5rem; }
+
+  .contact-container {
+    margin: 0; }
+
+  .contact-card {
+    width: 90%;
+    padding: 1rem;
+    margin: auto; }
+    .contact-card h2 {
+      font-size: 1.75rem;
+      text-align: center; }
+
+  .mail {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 1rem; }
+
+  .media-item {
+    font-size: 2.5rem; } }
 footer {
   width: 100vw;
   padding: 4rem 0 1rem;
@@ -329,6 +489,12 @@ footer {
 @media (min-width: 374.98px) and (max-width: 767.98px) and (orientation: portrait) {
   footer .footer {
     font-size: 0.75rem; } }
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  footer .footer {
+    font-size: 1rem; } }
+@media (min-width: 992px) and (max-width: 1199.98px) and (orientation: landscape) {
+  footer .footer {
+    font-size: 1rem; } }
 body, header {
   font-family: 'Montserrat', sans-serif;
   width: 100vw;
