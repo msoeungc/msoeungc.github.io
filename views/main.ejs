@@ -12,6 +12,7 @@
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -19,15 +20,17 @@
 </header>
 
 <body>
+  <video class="main-bg" id="background-video" autoplay loop muted poster="">
+    <source src="/images/sunsetbg.mp4" type="video/mp4">
+  </video>
   <section class="title" id="title">
-    <div class="main-bg"></div>
     <div class="title-container">
       <div class="title-text-container slide-wrap">
-        <h1>Hello, I'm <span style="color: rgb(187, 225, 250)">Matthew Soeung</span></h1>
+        <h1>Hello, I'm <span style="color: #30475E">Matthew Soeung</span></h1>
         <h2>I am a frontend web developer based in Orange, California.</h2>
       </div>
       <div class="title-img-container slide-wrap">
-        <img class="title-img" src="/images/selfYosemite.jpg" />
+        <img class="title-img" src="/images/centralPark.jpg" />
       </div>
     </div>
   </section>
@@ -88,11 +91,29 @@
     </div>
   </section>
   <section class="tools" id="tools">
+    <video class="tools-video" id="background-video" autoplay loop muted poster="">
+      <source src="/images/toolsVideo.mp4" type="video/mp4">
+    </video>
     <div class="slide-wrap">
       <h1>Tools</h1>
     </div>
-    <div class="tools-container">
-
+    <div class="slide-wrap">
+      <div class="tools-container">
+        <ul class="tool-list">
+          <li><b>Hardware</b></li>
+          <li class="tool-item"><a href="https://pcpartpicker.com/b/xM8MnQ" target="_blank">PC</a></li>
+          <li><b>Software</b></li>
+          <li class="tool-item">Hyper Terminal</li>
+          <li class="tool-item">Atom/VS Code Editor</li>
+          <li class="tool-item">CSS/SASS</li>
+          <li class="tool-item">HTML/Bootstrap</li>
+          <li class="tool-item">EJS</li>
+          <li class="tool-item">JS/React</li>
+          <li class="tool-item">Node/Express</li>
+          <li class="tool-item">Mongodb</li>
+          <li class="tool-item">Github</li>
+        </ul>
+      </div>
     </div>
   </section>
   <section class="contact" id="contact">
@@ -119,6 +140,6 @@
   </section>
 </body>
 <footer>
-    <h2 class="footer">Designed and Developed by Matthew Soeung</h2>
+  <h2 class="footer">Designed and Developed by Matthew Soeung</h2>
 </footer>
 <script src="js/animations.js"></script>

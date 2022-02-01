@@ -2,7 +2,6 @@
   color: #DDDDDD; }
 
 .navbar {
-  background-color: #30475E;
   padding: 0 2rem; }
 
 .navbar-brand {
@@ -79,7 +78,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 17% 0; }
+  padding: 12% 0 25%; }
 
 .title-text-container {
   width: 30%;
@@ -255,7 +254,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5% 0; }
+  margin: 5rem 0 15rem; }
 
 .project-img-container {
   position: relative;
@@ -360,6 +359,40 @@
 
   .img-description {
     font-size: 1rem; } }
+.tools {
+  width: 100%; }
+  .tools h1 {
+    color: #DDDDDD;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem; }
+
+.tools-video {
+  position: absolute;
+  width: 100%;
+  opacity: 20%; }
+
+.tools-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45rem; }
+
+.tool-list {
+  width: 60%;
+  column-count: 2;
+  column-gap: 30rem;
+  column-fill: auto;
+  position: relative;
+  line-height: 6rem;
+  list-style: none;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #DDDDDD; }
+
 .contact h1 {
   color: #DDDDDD;
   text-align: center;
@@ -369,8 +402,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 4rem; }
+  align-items: center; }
 
 .contact-card {
   display: flex;
@@ -381,12 +413,12 @@
   border-color: #30475E;
   padding: 4rem; }
   .contact-card h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #DDDDDD;
     padding-bottom: 2rem; }
 
 .mail {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #DDDDDD;
   border-radius: 3%;
@@ -501,11 +533,10 @@ body, header {
   background-color: #222831; }
 
 .main-bg {
-  background: url("/images/mainBg.jpg") center/cover;
   z-index: -1;
-  width: 100vw;
-  height: 100%;
-  position: absolute; }
+  width: 100%;
+  position: absolute;
+  opacity: 10%; }
 
 .slide-wrap {
   max-width: 100%;
